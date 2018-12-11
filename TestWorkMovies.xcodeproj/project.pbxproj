@@ -14,6 +14,9 @@
 		3196010621BAC31F00C39FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3196010521BAC31F00C39FA5 /* Assets.xcassets */; };
 		3196010921BAC31F00C39FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3196010721BAC31F00C39FA5 /* LaunchScreen.storyboard */; };
 		3196011421BAC31F00C39FA5 /* TestWorkMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3196011321BAC31F00C39FA5 /* TestWorkMoviesTests.swift */; };
+		3196012121BE682F00C39FA5 /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3196012021BE682F00C39FA5 /* FilmCollectionViewCell.swift */; };
+		3196012521BE7F0400C39FA5 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3196012421BE7F0400C39FA5 /* FilmModel.swift */; };
+		3196012821BE89C300C39FA5 /* DetailFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3196012721BE89C300C39FA5 /* DetailFilmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		3196010F21BAC31F00C39FA5 /* TestWorkMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWorkMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3196011321BAC31F00C39FA5 /* TestWorkMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWorkMoviesTests.swift; sourceTree = "<group>"; };
 		3196011521BAC31F00C39FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3196012021BE682F00C39FA5 /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
+		3196012421BE7F0400C39FA5 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		3196012721BE89C300C39FA5 /* DetailFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,10 @@
 		319600FA21BAC31E00C39FA5 /* TestWorkMovies */ = {
 			isa = PBXGroup;
 			children = (
+				3196012621BE7F0A00C39FA5 /* Model */,
+				3196012321BE7E5400C39FA5 /* Controller */,
+				3196012221BE684C00C39FA5 /* View */,
 				319600FB21BAC31E00C39FA5 /* AppDelegate.swift */,
-				319600FD21BAC31E00C39FA5 /* ViewController.swift */,
 				319600FF21BAC31E00C39FA5 /* Main.storyboard */,
 				3196010521BAC31F00C39FA5 /* Assets.xcassets */,
 				3196010721BAC31F00C39FA5 /* LaunchScreen.storyboard */,
@@ -97,6 +105,31 @@
 				3196011521BAC31F00C39FA5 /* Info.plist */,
 			);
 			path = TestWorkMoviesTests;
+			sourceTree = "<group>";
+		};
+		3196012221BE684C00C39FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3196012021BE682F00C39FA5 /* FilmCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3196012321BE7E5400C39FA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				319600FD21BAC31E00C39FA5 /* ViewController.swift */,
+				3196012721BE89C300C39FA5 /* DetailFilmViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3196012621BE7F0A00C39FA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3196012421BE7F0400C39FA5 /* FilmModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				319600FE21BAC31E00C39FA5 /* ViewController.swift in Sources */,
+				3196012821BE89C300C39FA5 /* DetailFilmViewController.swift in Sources */,
 				319600FC21BAC31E00C39FA5 /* AppDelegate.swift in Sources */,
+				3196012521BE7F0400C39FA5 /* FilmModel.swift in Sources */,
+				3196012121BE682F00C39FA5 /* FilmCollectionViewCell.swift in Sources */,
 				3196010421BAC31E00C39FA5 /* TestWorkMovies.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +401,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFAEAM5WR3;
 				INFOPLIST_FILE = TestWorkMovies/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +420,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFAEAM5WR3;
 				INFOPLIST_FILE = TestWorkMovies/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
